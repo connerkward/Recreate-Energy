@@ -1,0 +1,68 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifywebapp-test-204927-authRole",
+      "UnauthRoleArn": "arn:aws:iam::536234935333:role/amplify-amplifywebapp-test-204927-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::536234935333:role/amplify-amplifywebapp-test-204927-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-amplifywebapp-test-204927-deployment",
+      "UnauthRoleName": "amplify-amplifywebapp-test-204927-unauthRole",
+      "StackName": "amplify-amplifywebapp-test-204927",
+      "StackId": "arn:aws:cloudformation:us-west-2:536234935333:stack/amplify-amplifywebapp-test-204927/81dbbee0-dfcb-11ec-9ca5-0627aa320fcd",
+      "AmplifyAppId": "d2ipzvm1y4n2r4"
+    }
+  },
+  "auth": {
+    "amplifywebappc4b5f027": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-west-2_lUFRBpitK",
+        "UserPoolName": "bioreactor-operators",
+        "AppClientID": "451j19u9vqba8rf3pknm5o59mq",
+        "AppClientIDWeb": "451j19u9vqba8rf3pknm5o59mq",
+        "HostedUIDomain": "recreate",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"email\",\"openid\",\"profile\"],\"CallbackURLs\":[\"http://localhost\"],\"LogoutURLs\":[\"http://localhost\"]}"
+      },
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_UPPERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "lastPushTimeStamp": "2022-05-30T05:00:07.434Z"
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifywebapp-test-204927-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2022-05-30T05:00:07.164Z",
+      "output": {},
+      "lastPushDirHash": "cUtCelDo3HFLl8JXD3Exzq/r4iM="
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.ChartsContainer{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 0.5vw; 
+    padding-right: 1vw !important;
+    padding-left: 1vw !important;
+    padding-bottom: 1vw !important;
+    overflow: scroll;
+    /* gap: rem; */
+}
+
+.chart-title-container {
+    width: auto;
+    height: auto;
+    min-height: 30vh;
+}
+
+.chart-title-container .chart-title {
+    /* margin: 0.25rem; */
+    text-align: right;
+    font-size: small;
+    color: var(--secondary-font-color);
+    /* background-color: brown; */
+}

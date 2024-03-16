@@ -1,0 +1,28 @@
+:root{
+    --bg-color: rgb(34, 34, 34);
+    --primary-font-face: -apple-system, BlinkMacSystemFont, sans-serif;
+    /* --primary-font-face: "Montserrat", sans-serif; */
+    --code-font-face: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    --primary-font-color: rgb(233, 233, 233);
+    --secondary-font-color: rgb(93, 93, 93);
+    --recreate-green: #2b8b50; 
+    --recreate-green-dark: #20683c; 
+    --primary-accent-color: #82ca9d; 
+    --secondary-accent-color: #8884d8;
+    --radius: 10px;
+    --margin-sides: 2.5vw;
+    --margin-top: 1vw;
+    --content-height: 90.5vh;
+    --nav-height: 2.5rem;
+    --footer-height: calc((100vh - var(--content-height) - var(--nav-height)));
+    --amplify-colors-background-primary: rgba(0, 0, 0, 0.743);
+    --amplify-colors-brand-primary-80: var(--recreate-green);
+    --amplify-colors-brand-primary-90: var(--recreate-green-dark);
+    --amplify-colors-border-primary: var(--secondary-font-color);
+    --amplify-colors-font-primary: white;
+    --amplify-components-button-border-radius: var(--radius);
+    --amplify-components-fieldcontrol-border-radius: var(--radius);
+    --amplify-components-placeholder-border-radius: var(--radius);
+    --amplify-components-input-border-radius: var(--radius);
+}

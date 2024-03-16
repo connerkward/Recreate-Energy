@@ -1,0 +1,23 @@
+{
+    "region": "us-west-2",
+    "userPoolId": "us-west-2_lUFRBpitK",
+    "userPoolWebClientId": "451j19u9vqba8rf3pknm5o59mq",
+    "mandatorySignIn": true,
+    "cookieStorage": {
+      "domain": "localhost",
+      "path": "/",
+      "expires": 365,
+      "secure": true
+    },
+    "oauth": {
+      "domain": "recreate.auth.us-west-2.amazoncognito.com",
+      "scope": [
+        "email",
+        "openid",
+        "profile"
+      ],
+      "redirectSignIn": "http://localhost",
+      "redirectSignOut": "http://localhost",
+      "responseType": "code"
+    }
+  }

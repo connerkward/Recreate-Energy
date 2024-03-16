@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Recreate Energy Chamber Management</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="../static/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+<style>
+    .padtwo {
+        padding-left: 4%;
+    }
+    .padone {
+        padding-left: 2%;
+    }
+    .toc {
+        background: #f9f9f9 none repeat scroll 0 0;
+        border: 1px solid #aaa;
+        display: table;
+        font-size: 85%;
+        margin-bottom: 1em;
+        padding: 20px;
+        width: 50%;
+        line-height: 40px;
+    }
+    
+</style>
+<body id="page-top" class="sidebar-toggled">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-dark sidebar sidebar-dark accordion toggled" id="accordionSidebar" >
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="http://www.recreateenergy.com/">
+                 <!-- bak
+				<div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>	
+				<div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+
+				<img src="img/recreate_logo_full.png" alt="Flowers in Chania">
+				 -->
+				<div class="sidebar-brand-icon">
+                    <img src="../static/img/recreate_logo.png">
+                </div>	
+                <div class="sidebar-brand-text mx-3">RC Energy</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+			<hr class="sidebar-divider">
+
+			<div class="sidebar-heading">
+                Core
+            </div>
+
+			<!-- Nav Item - Charts -->
+			<li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+			
+			<!-- Nav Item - Console -->
+			<li class="nav-item active">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Console</span></a>
+                </a>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="console.html"></i>Console</a>
+                        <a class="collapse-item active" href="documentation.html"></i>Documentation</a>
+                    </div>
+                </div>
+            </li>
+
+			<!-- Divider -->
+			<hr class="sidebar-divider">
+
+			<div class="sidebar-heading">
+                User
+            </div>
+
+			<li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-user"></i>
+                    <span>Account</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">User Information</h6>
+                        <a class="collapse-item" href="profile.html"></i>Profile</a>
+                        <a class="collapse-item" href="settings.html"></i>Settings</a>
+						<a class="collapse-item" href="#" data-toggle="modal" data-target="#logoutModal"></i>Logout</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-dark topbar mb-4 static-top shadow">
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+					
+					
+                    <h1 class="h3 mb-4 text-gray-800">Documentation</h1>
+                    
+                    <div class="toc">
+                        <p1 class="h6 mb-4 text-gray-800">Table of Contents</p1><br>
+                        <a href="#set">Set</a><br>
+                        <a href="#reset">Reset</a><br> 
+                    </div>
+
+                    <div style="padding: 2%;"></div>
+                    
+                    <h6 class="h5 mb-4 text-gray-800">Set</h6>
+                    <p>The <code>set</code> command will toggle a certain aspect of the chamber to a specific value for a determined period of time.</p>
+                    <p class="pad   one"> <strong>Anatomy</strong> : set {<code>time</code>} {<code>device</code>} {<code>attribute</code>} {<code>value</code>}</p>
+                    <p class="padtwo">
+                        - {<code>time</code>}: depending on the user's preference, a user could toggle an attribute for a specific time or permanently. If a user wants the change to remain permanent they would write ‘-p’ in {<code>time</code>}. 
+                        If a user wants the change to be temporary for a set time they would write ‘-t {<code>value</code>} {<code>type</code>}’. Here the value would be an integer greater than 0 and value type will determine the time 
+                        span. Allowed value types are ‘s’ for seconds, ‘h’ for hours, ‘d’ for days, ‘m’ for month
+                    </p>
+                    <p class="padtwo"> 
+                        - {<code>device</code>}: The user would input the device ID they wish to manipulate
+                    </p>
+                    <p class="padtwo">
+                        - {<code>attribute</code>}: The user would choose the attribute they would like to change. Some examples include {temperature}, {fanspeed}, {ping},{lights},{fan}. {Temperature} pertains to the temperature that the environment controls will try to maintain. 
+                        {fanspeed} pertains to the radiator fan speeds. {ping} pertains to the amount of time between each ping from the raspberry pi to the database. <br><br>
+                        - {<code>value</code>}: The user would choose a numeric value depending on the {attribute} chosen.
+                    </p>
+                    <p class="padone">                         
+                        <strong>Ex.</strong> ‘set -t 5 -h A001 temperature 25’ <br>
+	                    This would set the target temperature of chamber A001 to 25 degrees celsius for 5 hours then revert to previous set value. <br>
+                    </p>
+                    
+                    
+                    <h6 class="h5 mb-4 text-gray-800">Reset</h6>
+                    <p>The <code>Reset</code> command will revert the chosen {<code>attribute</code>} to the previous set value.</p>
+                    <p class="padone"><strong>Anatomy</strong> : reset {<code>device</code>} {<code>attribute</code>}</p>
+                    <p class="padtwo">
+                        - Refer to Set for {<code>device</code>} & {<code>attribute</code>}
+                    </p>
+                    <p class="padone">                     
+                        <strong>Ex.</strong> ‘reset A001 light’<br>
+                        This would reset the value of the light system in chamber A001 to the previous set value.
+                    </p>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Recreate Energy 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="../static/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="../static/js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

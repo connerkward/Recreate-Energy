@@ -1,0 +1,34 @@
+# database.py
+from sqlalchemy.ext.asyncio import create_async_engine
+from sqlalchemy.orm import declarative_base
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import Boolean, Column, Integer, String
+
+SQLALCHEMY_DATABASE_URL = "sqlite+aiosqlite:///./sqlite3.db"
+
+engine = create_async_engine(
+    SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
+)
+
+Base = declarative_base()
+
+
+async def get_db():
+    # TODO: this will be replaced with a timestream instantiation.
+    session = AsyncSession(engine)
+    try:
+        yield session
+    finally:
+        await session.close()
+
+class User(Base):
+    """DB USERS TABLE SCHEMA"""
+    __tablename__ = 'users'
+
+    id = Column(Integer, primary_key=True, index=True)
+    username = Column(String, unique=True, index=True)
+    email = Column(String, unique=True, index=True)
+    full_name = Column(String, index=True)
+    disabled = Column(Boolean, default=False)
+    # associated_bioreactors = Column(Boolean, default=False)
+    hashed_password = Column(String)

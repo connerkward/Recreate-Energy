@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: var(--primary-font-face);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--primary-font-color);
+  /* background-color: rgb(0, 0, 0);  */
+}
+
+code {
+  font-family: var(--code-font-face);
+  color: var(--secondary-font-color);
+}
+
+[data-amplify-authenticator] {
+  background-color: rgb(0, 0, 0); 
+  /* background-image: url(./Images/bg2.png); */
+  /* background-image: url(./Images/bg2.png); */
+  background-repeat: no-repeat;
+}

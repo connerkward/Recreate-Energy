@@ -1,0 +1,116 @@
+.Navbar {
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+    width: 100%;
+}
+
+.Navbar .NavLogoContainer{
+    background-color: black;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding-right: var(--margin-sides);
+    position: relative;
+}
+
+.Navbar .NavLogoContainer .NavLogo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    color:white;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    padding-left: var(--margin-sides);
+    padding-right: var(--margin-sides);
+    font-size: 1.5rem;
+    font-weight:300;
+    justify-self: flex-start;
+    /* width: 50vw; */
+    flex:0.5;
+}
+
+
+.Navbar .NavLogoContainer .NavLogo:hover {
+    background-color: var(--recreate-green);
+    /* padding-right: calc(var(--margin-sides) + 5vw); */
+}
+
+.Navbar .NavLogoContainer button {
+    background-color: rgb(46, 46, 46);
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    color: #FFF;
+    border-radius: 10px;
+    width: 100px;
+    /* box-shadow: 0 1px 3px rgb(68, 68, 68), 0 1px 2px rgb(28, 28, 28); */
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    border: none;
+    font-weight:300;
+}
+
+
+.Navbar .NavLogoContainer button:hover {
+    background-color: var(--recreate-green);
+    color: rgb(255, 255, 255);
+}
+
+.Navbar .NavLogoContainer .NavLinks {
+    height: 100%;
+    min-width: 30vw;
+    
+}
+
+.Navbar .NavLogoContainer .NavLinks .NavLink {
+    background-color: rgba(0, 0, 0, 0);
+    /* height: 100%; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-weight:300;
+}
+
+.Navbar .NavLogoContainer .NavLinks .NavLink.active {
+    background-color: rgba(0, 0, 0, 0);
+    /* background-color: var(--primary-accent-color); */
+    font-weight:bolder;
+}
+
+.Navbar .NavLogoContainer .NavLinks .NavLink:hover {
+    background-color: rgba(0, 0, 0, 0);
+    /* background-color: var(--primary-accent-color); */
+    font-weight: bold;
+}
+
+.Navbar .NavLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.Navbar .NavLinks .NavLink {
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+}
+
+.Navbar .NavLinks .NavLink.active {
+    background-color: rgb(84, 84, 84);
+}
+
+.Navbar .NavLinks .NavLink:hover {
+    background-color: var(--primary-accent-color);
+}
+

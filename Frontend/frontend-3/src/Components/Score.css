@@ -1,0 +1,53 @@
+#Score.chart-title-container {
+    /* flex-grow: 1; */
+    /* THIS Can be used to make the container fit to row */
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+}
+
+#Score .chart-title{
+    text-align: right;
+    font-size: small;
+    color: var(--secondary-font-color);
+}
+
+#Score .chart-row-container{
+    display:flex;
+    flex-direction: row;
+    height: 80%;
+    border-style: solid;
+    border-width: 0.08rem;
+    border-color: var(--secondary-font-color);
+}
+
+#Score .chart-dingo-container{
+    min-width: 40%;
+    padding: 1vw;
+    border-right-style: solid;
+    border-right-width: 0.08rem;
+    border-right-color: var(--secondary-font-color);
+}
+
+
+#Score .score-readout{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: var(--code-font-face);
+    font-size: 1.7vh;
+    height: 75%;
+}
+
+#Score .score-readout li {
+    list-style: none;
+    align-items: center;
+}
+
+#Score .chart-container{
+    max-width: auto;
+}

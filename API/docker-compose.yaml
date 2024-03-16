@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  api:
+    image: 536234935333.dkr.ecr.us-west-2.amazonaws.com/api:latest
+    # deploy:
+    #   resources:
+    #     limits:
+    #       # cpu: "0.5"
+    #       memory: 0.5g
+    ports:
+      - "80:80"

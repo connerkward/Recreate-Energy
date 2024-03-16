@@ -1,0 +1,5 @@
+DATABASE_NAME = "05312022-reactor-data"
+TABLE_NAME = "IoTMulti" # deprecate this
+HT_TTL_HOURS = 24
+CT_TTL_DAYS = 7
+ONE_GB_IN_BYTES = 1073741824
